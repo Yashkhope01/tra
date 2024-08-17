@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #170329;
+        color: whitesmoke;
+        font-family: "Playfair Display", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: #2a0441;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: whitesmoke;
+      }
+      nav ul li a:hover {
+        color: rgb(144, 147, 175);
+        font-size: 1rem;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 100px 0;
+        flex-wrap: wrap;
+      }
+      .firstsection > div {
+        width: 45%;
+        min-width: 300px;
+      }
+      .leftsection {
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+      }
+      .rightsection img {
+        height: 300px;
+        margin: 91px;
+        margin-left: 96px;
+      }
+      .text-purple {
+        color: rgb(238, 129, 13);
+      }
+      #element {
+        color: rgb(238, 129, 13);
+      }
+      .ndsection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      main hr {
+        margin: 80px 84px;
+        height: 1%;
+      }
+      .ndsection h1 {
+        font-size: 2rem;
+      }
+      .text-grey {
+        color: rgb(5, 166, 246);
+        font-size: 15px;
+      }
+      .ndsection .box {
+        background: rgb(145, 124, 206);
+        width: 77vw;
+        height: 2px;
+        margin: 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .ndsection .vertical {
+        background-color: rgb(169, 160, 195);
+        height: 93px;
+        width: 1px;
+        margin: 0 7vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .image-top {
+        width: 35px;
+        margin-top: -44px;
+      }
+      .vertical-title {
+        margin-top: 75px;
+        font-size: 14px;
+      }
+      .vertical-desc {
+        margin-top: 10px;
+        color: rgb(193, 247, 246);
+        width: 150px;
+        font-size: 10px;
+        text-align: center;
+      }
+      footer {
+        background-color: #391b49;
+        padding: 20px 0;
+      }
+      .footer {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+      .footer div {
+        min-width: 200px;
+        flex: 1;
+        margin: 10px;
+      }
+      .footer ul {
+        list-style: none;
+        padding: 0;
+      }
+      .footer li a {
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 10px 0;
+        display: block;
+      }
+      .leftsection .buttons {
+        padding: 50px 0;
+      }
+      .leftsection .btn {
+        border: none;
+        cursor: pointer;
+        outline: none;
+        font-family: "Playfair Display", sans-serif;
+        font-size: 16px;
+        background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+        padding: 0.7em 2em;
+        border-radius: 65px;
+        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+        transition: box-shadow 0.25s;
+        color: white;
+        margin: 10px 0;
+      }
+      .btn .text {
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+      }
+      .btn:after {
+        content: "";
+        border-radius: 18px;
+        position: absolute;
+        margin: 4px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background: #0e0e10;
+      }
+      .btn:hover {
+        background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+        box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+      }
+      .btn:hover .text {
+        background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Yash's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          <div> Hi, my name is <span class="text-purple"> Yash </span></div>
+          <div>and I am passionate.</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <a href="./resume yash (1).pdf"
+              ><button class="btn">Download Resume</button></a
+            >
+            <a href="https://github.com/Yashkhope01"
+              ><button class="btn">Visit GitHub</button></a
+            >
+          </div>
+        </div>
+        <div class="rightsection">
+          <img
+            src="./—Pngtree—developers are coding programs on_14867886.png"
+            alt="Coder"
+          />
+        </div>
+      </section>
+      <hr />
+      <section class="ndsection">
+        <span class="text-grey">What have I done so far </span>
+        <h1>Work Experience</h1>
+        <div class="box">
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="./icons8-html-50.png"
+              alt="HTML Developer"
+            />
+            <div class="vertical-title">HTML Dev</div>
+            <div class="vertical-desc">
+              Developed responsive websites using HTML, CSS, and JavaScript,
+              ensuring cross-browser compatibility and mobile optimization.
+              Collaborated with designers to implement UI/UX designs.
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="./icons8-node-js-32.png"
+              alt="Node.js Developer"
+            />
+            <div class="vertical-title">Node.js Dev</div>
+            <div class="vertical-desc">
+              Developed scalable backend applications using Node.js, Express,
+              and MongoDB. Collaborated with front-end teams to enhance user
+              experience. Ensured code quality through testing and version
+              control. Delivered projects on time while adhering to best
+              practices and industry standards.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="./icons8-sql-60.png" alt="SQL Developer" />
+            <div class="vertical-title">SQL Dev</div>
+            <div class="vertical-desc">
+              Developed and optimized SQL queries for data retrieval and
+              manipulation. Designed and maintained database schemas, ensuring
+              data integrity and performance. Collaborated with cross-functional
+              teams to analyze data requirements and implement efficient
+              solutions.
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="./icons8-video-editing-64.png"
+              alt="Video Editor"
+            />
+            <div class="vertical-title">Video Editor</div>
+            <div class="vertical-desc">
+              Experienced video editor with strong skills in crafting compelling
+              narratives. Proficient in Adobe Premiere Pro, Da Vinci, and After
+              Effects. Successfully managed and edited diverse projects,
+              including promotional videos, short films, and social media
+              content, enhancing visual storytelling and engagement.
+            </div>
+          </div>
+          <div class="vertical">
+            <img
+              class="image-top"
+              src="./icons8-web-50.png"
+              alt="Web Developer"
+            />
+            <div class="vertical-title">Web Dev</div>
+            <div class="vertical-desc">
+              Dynamic web developer with hands-on experience in building
+              responsive websites and web applications. Proficient in HTML, CSS,
+              JavaScript, and React, with a strong focus on user experience and
+              performance optimization. Adept at integrating APIs, troubleshooting
+              issues, and collaborating with teams to deliver high-quality digital
+              solutions.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="first">
+          <h2>Yash's Developer</h2>
+          <h2>Portfolio</h2>
+        </div>
+        <div class="second">
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/yash-khope-25b095275/"
+                >LinkedIn</a
+              >
+            </li>
+            <li><a href="https://www.instagram.com/y.k_yash_01">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="third">
+          <ul>
+            <li><a href="https://github.com/Yashkhope01">Github</a></li>
+            <li><a href="https://x.com/k_yash_03">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="fourth">
+          <ul>
+            <li><a href="#">Contact No: +91 8975905912</a></li>
+            <li><a href="#">Gmail: yashkhope01@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer.", "Video Editor."],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
